@@ -44,7 +44,7 @@ while True:
   if yaw==1999:
       yaw = 2000
 
-  mess=struct.pack('>' + 'd' * numOfValues, roll, pitch, yaw+1, throttle, aux_1, aux_2, aux_3, aux_4)
+  mess=struct.pack('>' + 'd' * numOfValues, roll, pitch, yaw, throttle, aux_1, aux_2, aux_3, aux_4)
   client_socket.sendto(mess, address)
   #print throttle
   #print pitch
