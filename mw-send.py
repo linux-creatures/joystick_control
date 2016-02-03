@@ -39,7 +39,6 @@ while True:
   aux_3 = 1000
   aux_4 = 1000
 
-
   numOfValues = 8
   if yaw==1999:
       yaw = 2000
